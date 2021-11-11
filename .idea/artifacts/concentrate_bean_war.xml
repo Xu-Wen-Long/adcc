@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="concentrate-bean:war">
+    <output-path>$PROJECT_DIR$/parent-webs/concentrate-bean/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>concentrate-bean</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="concentrate-bean-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="concentrate-bean:war exploded" />
+    </root>
+  </artifact>
+</component>

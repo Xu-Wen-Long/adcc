@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://code.alibabatech.com/schema/dubbo
+                           http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!--给服务消费者起一个唯一标识-->
+    <dubbo:application name="consumer"/>
+
+    <!--去注册中心查找服务-->
+    <dubbo:registry address="zookeeper://192.168.88.128:2181"/>
+
+    <!--查找开放指定接口-->
+    <!--OrderService-->
+    <dubbo:reference interface="com.bjpowernode.service.ProviderService"
+    id="orderRemoteService"/>
+
+    <dubbo:reference interface="com.bjpowernode.service.UserProviderService"
+    id="userRemoteService"/>
+
+    <!--配置消费方的服务对象-->
+    <bean id="goodService" class="com.bjpowernode.service.impl.ConsumerServiceImpl ">
+        <property name="userProviderService" ref="userRemoteService"/>
+        <property name="providerService" ref="orderRemoteService"/>
+    </bean>
+
+
+</beans>

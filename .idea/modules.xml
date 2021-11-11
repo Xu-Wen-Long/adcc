@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/parent-webs/concentrate-bean/concentrate-bean.iml" filepath="$PROJECT_DIR$/parent-webs/concentrate-bean/concentrate-bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent-webs/concentrate-interface/concentrate-interface.iml" filepath="$PROJECT_DIR$/parent-webs/concentrate-interface/concentrate-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent-webs/consumer/consumer.iml" filepath="$PROJECT_DIR$/parent-webs/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent-webs/parent-webs.iml" filepath="$PROJECT_DIR$/parent-webs/parent-webs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent-webs/provider/provider.iml" filepath="$PROJECT_DIR$/parent-webs/provider/provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent-webs/user-provider/userprovider.iml" filepath="$PROJECT_DIR$/parent-webs/user-provider/userprovider.iml" />
+    </modules>
+  </component>
+</project>
